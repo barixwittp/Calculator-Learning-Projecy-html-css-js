@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    width:100%;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: radial-gradient(283px at 1.7% 8.6%, rgb(141, 254, 235) 0%, rgb(232, 176, 254) 90%);
+    overflow: hidden;
+}
+
+body.active{
+    width:100%;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+
+}
+
+body.active1{
+    width:100%;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: radial-gradient(283px at 1.7% 8.6%, rgb(141, 254, 235) 0%, rgb(232, 176, 254) 90%);
+    overflow: hidden;
+
+}
+.wraper{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    margin-left: 25px;
+    /* padding: 10px; */
+    position: absolute;
+    top: 30px;
+
+}
+
+.calculator{
+
+    border: 1px solid rgb(236, 44, 236);
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: -5px -4px 69px 0px rgb(255, 255, 255),
+0px 45px 26px 0px rgba(255, 255, 255, 0.14);
+background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.history{
+
+    border: 1px solid rgb(236, 44, 236);
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: -5px -4px 69px 0px rgb(255, 255, 255),
+0px 45px 26px 0px rgba(255, 255, 255, 0.14);
+background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+margin: 50px;
+width: 450px;
+height: 555px;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+overflow: auto;
+
+
+}
+
+.history h1{
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    color: orange;
+    /* padding: 0px 10px; */
+    padding-left: 35px;
+    padding-right: 10px;
+    /* position: fixed; */
+    width: 380px;
+    text-align: center;
+    
+}
+
+.history h1:hover{
+    scale: 1.1;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.formulas{
+    border: 1px solid rgb(236, 44, 236);
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: -5px -4px 69px 0px rgb(255, 255, 255),
+0px 45px 26px 0px rgba(255, 255, 255, 0.14);
+background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+margin: 50px;
+width: 450px;
+height: 555px;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+gap: 20px;
+overflow: auto;
+
+
+}
+
+.formulas h1{
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    color: orange;
+    /* padding: 0px 10px; */
+    padding-left: 65px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.formulas h1:hover{
+
+    scale: 1.1;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.inputs{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.inputs::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+button{
+    border:none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: -8px -10px 15px rgb(22, 23, 23);
+}
+
+
+
+.equalbtn{
+    background-color: orange;
+}
+
+.Operator{
+    
+    background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+
+}
+
+li{
+
+    margin: 10px;
+    /* padding-left: 15px; */
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+
+}
+
+li:hover{
+    scale: 1.1;
+    background: radial-gradient(circle at 10% 20%, rgb(228, 118, 0) 0%, rgb(247, 189, 2) 90%);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+strong{
+    /* padding-left: 5px; */
+    margin: 8px;
+}
+
+code{
+    margin: 8px;
+
+}
+
+
+
+/* Styling for each history item */
+.history p {
+    margin-top: 1rem;
+    background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    padding: 10px;
+}
+
+.history p:hover{
+    scale: 1.1;
+    background: radial-gradient(circle at 10% 20%, rgb(228, 118, 0) 0%, rgb(247, 189, 2) 90%);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+button:active{
+    scale: 0.7;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    background-color: rgba(147, 145, 145, 0.553);
+
+}
+
+
+.mode{
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    /* margin-left: 30px; */
+    /* margin-top: 10px; */
+    cursor: pointer;
+    /* position: absolute; */
+
+
+}
+
+.mode:active{
+    scale: 0.5;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+
+}
+
+.mode1{
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    /* margin-left: 30px; */
+    /* margin-top: 10px; */
+    cursor: pointer;
+    /* position: absolute; */
+
+}
+
+.mode1:active{
+    scale: 0.5;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+
+}
+
+.img1{
+    top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin: 20px; */
+    margin-top: 10px;
+    /* padding-left: 10px; */
+    /* position: absolute; */
+    /* margin: 0px; */
+    /* margin-bottom: 20px; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
